@@ -21,7 +21,7 @@
       const frag = await fetch('frag.glsl').then(resp => resp.text());
       draw(vert, frag, uniforms);
     })(
-      0,
+      1,
       [
         { type: '1f', name: 'u_time', value: Math.random()},
         { type: '2fv', name: 'u_res', value: [640.0, 480.0] }
