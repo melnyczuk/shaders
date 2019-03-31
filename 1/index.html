@@ -21,11 +21,11 @@
       { type: '2fv', name: 'u_res', value: [640.0, 480.0] }
     ];
 
-    (async (day, uniforms) => {
+    (async (uniforms) => {
       const vert = await fetch('vert.glsl').then(resp => resp.text());
       const frag = await fetch('frag.glsl').then(resp => resp.text());
       draw(vert, frag, uniforms);
-    })(document.title, uniforms);
+    })(uniforms);
   </script>
 </body>
 
