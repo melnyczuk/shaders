@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>1</title>
-  <link rel="stylesheet" href="styles.css" type="text/css"></link>
+  <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body onclick="document.location.reload()">
@@ -16,16 +16,16 @@
   <script src="https://mdn.github.io/webgl-examples/tutorial/gl-matrix.js"></script>
   <script src="index.js" type="text/javascript"></script>
   <script>
+    const uniforms = [
+      { type: '1f', name: 'u_time', value: Math.random() },
+      { type: '2fv', name: 'u_res', value: [640.0, 480.0] }
+    ];
+
     (async (day, uniforms) => {
       const vert = await fetch('vert.glsl').then(resp => resp.text());
       const frag = await fetch('frag.glsl').then(resp => resp.text());
       draw(vert, frag, uniforms);
-    })(
-      1,
-      [
-        { type: '1f', name: 'u_time', value: Math.random()},
-        { type: '2fv', name: 'u_res', value: [640.0, 480.0] }
-      ]);
+    })(document.title, uniforms);
   </script>
 </body>
 
