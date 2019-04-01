@@ -102,3 +102,4 @@ function clear(gl) {
   gl.clearDepth(1.0);                 // Clear everything
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 }
+
