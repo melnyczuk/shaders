@@ -11,11 +11,11 @@ void main() {
   float b = distance(st,vec2(clamp(abs(sin(u_time + 0.44)), 0.1, 0.9), clamp(abs(sin(u_time + 0.34)), 0.1, 0.9)));
 
   float center = 0.39;
-  vec4 rect0 = vec4(center, 0.05, 0.683, 1.0);
+  vec4 rect0 = vec4(center, 0.1, 0.683, 0.95);
   vec2 hv = step(rect0.xy, st) * step(st, rect0.zw);
   float onOff = hv.x * hv.y;
 
-  vec4 rect1 = vec4(0.1, 0.05,center, 1.0);
+  vec4 rect1 = vec4(0.1, 0.1,center, 0.95);
   vec2 hv1 = step(rect1.xy, st) * step(st, rect1.zw);
   float onOff1 = hv1.x * hv1.y;
 
