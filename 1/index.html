@@ -22,8 +22,8 @@
     ];
 
     (async (uniforms) => {
-      const vert = await fetch('vert.glsl').then(resp => resp.text());
-      const frag = await fetch('frag.glsl').then(resp => resp.text());
+      const vert = await fetch('vert.c').then(resp => resp.text());
+      const frag = await fetch('frag.c').then(resp => resp.text());
       draw(vert, frag, uniforms);
     })(uniforms);
   </script>
