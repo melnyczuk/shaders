@@ -33,7 +33,7 @@ void main() {
   vec2 st = gl_FragCoord.xy/u_res;
 
   vec3 bg = vec3(0.4, 0.1, 0.1);
-  vec3 fg = vec3(0.3, 0.4, 0.43);
+  vec3 fg = vec3(0.4, 0.5, 0.63);
   float r = noise(rectangle(st, vec2(0.385,0.125), vec2(0.55,10.0), 0.05));
 
   vec3 colour = mix(bg, fg, r);
