@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  overflow:hidden;
+}
+
+.glCanvas {
+  margin: auto;
+  width: inherit;
+  height: inherit;
+}
+
+.container {
+  overflow: hidden;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+}
