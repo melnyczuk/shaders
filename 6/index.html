@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>3</title>
+  <title>6</title>
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body>
   <div class="container">
-    <canvas class="glCanvas" id="glCanvas" width="1200" height="1500" alt="click"></canvas>
+    <canvas class="glCanvas" id="glCanvas" width="1920" height="1920" alt="click"></canvas>
   </div>
   <script src="https://mdn.github.io/webgl-examples/tutorial/gl-matrix.js"></script>
   <script src="../index.js" type="text/javascript"></script>
   <script>
+
     (async () => {
       const vert = await fetch('../vert.glsl').then(resp => resp.text());
       const frag = await fetch('frag.glsl').then(resp => resp.text());
@@ -25,7 +26,7 @@
           const u_time = timestamp / 10000
           const uniforms = [
             { type: '1f', name: 'u_time', value: u_time},
-            { type: '2fv', name: 'u_res', value: [1200.0, 1500.0] }
+            { type: '2fv', name: 'u_res', value: [1920.0, 1920.0] }
           ];
 
           ((uniforms) => {

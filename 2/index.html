@@ -14,10 +14,10 @@
     <canvas class="glCanvas" id="glCanvas" width="500" height="500" alt="click"></canvas>
   </div>
   <script src="https://mdn.github.io/webgl-examples/tutorial/gl-matrix.js"></script>
-  <script src="index.js" type="text/javascript"></script>
+  <script src="../index.js" type="text/javascript"></script>
   <script>
     (async () => {
-      const vert = await fetch('vert.glsl').then(resp => resp.text());
+      const vert = await fetch('../vert.glsl').then(resp => resp.text());
       const frag = await fetch('frag.glsl').then(resp => resp.text());
 
       function animate(vert, frag) {

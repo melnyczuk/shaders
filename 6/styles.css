@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .glCanvas {
@@ -19,9 +19,12 @@ body {
 
 .container {
   overflow: hidden;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
 }
+
+/*# sourceMappingURL=styles.css.map */
+
