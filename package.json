@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "express": "^4.16.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "sass": "^1.17.3"
   },
   "scripts": {
